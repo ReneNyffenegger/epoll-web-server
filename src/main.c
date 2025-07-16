@@ -23,6 +23,7 @@ int parse_request(const char *req_str, request_t *req_info) {
         fprintf(stderr, "malformed http request\n");
         return -1;
     }
+    return 0;
 }
 
 FILE *handle_request(const request_t *req) {
